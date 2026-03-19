@@ -1,0 +1,25 @@
+<!-- MOLECULE: navbar.html
+     Barra de navegación fija con logo, links y hamburguesa.
+     Requiere Bootstrap 5 collapse JS.
+-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+    <a class="navbar-brand navbar-brand-custom" href="#inicio">✦ L.I.B.P</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-lg-3 py-2 py-lg-0">
+        <li class="nav-item"><a class="nav-link nav-link-custom active" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#estudios">Estudios</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#pasatiempos">Pasatiempos</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

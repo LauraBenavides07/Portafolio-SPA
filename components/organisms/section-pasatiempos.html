@@ -1,0 +1,115 @@
+<!-- ORGANISM: section-pasatiempos.html
+     Carrusel stack 3D de pasatiempos.
+     Contiene: atom/section-heading, molecule/carousel-slide (x6)
+     Requiere: JS stackGoTo(), stackMove(), buildDots()
+-->
+<section id="pasatiempos">
+  <div class="container fade-up">
+
+    <!-- atom: section-heading -->
+    <p class="sec-label mb-1">✦ Lo que disfruto hacer</p>
+    <h2 class="sec-title">Mis <em>Pasatiempos</em></h2>
+    <div class="divider"></div>
+
+    <!-- Barra de progreso del carrusel -->
+    <div class="stack-progress-track">
+      <div class="stack-progress-bar" id="stackPBar" style="width:16.67%"></div>
+    </div>
+
+    <!-- Carrusel stack 3D -->
+    <div class="stack-carousel" id="stackCarousel">
+
+      <!-- molecule: carousel-slide #1 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">01</div>
+          <img src="/assets/img/Viaje.jpg" alt="Viajar">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">01 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">🛫 Viajar y conocer nuevos lugares</h3>
+          <p class="sc-desc">Me gusta conocer nuevos lugares para vivir experiencias diferentes. Cuando viajo puedo desconectarme, aprender y ver el mundo desde otras perspectivas.</p>
+        </div>
+      </div>
+
+      <!-- molecule: carousel-slide #2 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">02</div>
+          <img src="/assets/img/Comida.jpg" alt="Comida">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">02 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">🧁 Salir a comer</h3>
+          <p class="sc-desc">En mi tiempo libre también me gusta salir a conocer nuevos lugares y probar nuevas comidas, en especial cuando disfruto de estos momentos con familia o amigos.</p>
+        </div>
+      </div>
+
+      <!-- molecule: carousel-slide #3 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">03</div>
+          <img src="/assets/img/Videojuegos.jpg" alt="Videojuegos">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">03 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">🎮 Videojuegos</h3>
+          <p class="sc-desc">Disfruto jugar videojuegos pues me retan a pensar, reaccionar rápido y buscar soluciones mientras paso tiempo con mi hermano o amigos.</p>
+        </div>
+      </div>
+
+      <!-- molecule: carousel-slide #4 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">04</div>
+          <img src="/assets/img/Maquillaje.jpg" alt="Maquillaje">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">04 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">💄 Maquillaje</h3>
+          <p class="sc-desc">Me gusta maquillarme porque es una forma de expresión y creatividad. Además, es una de las actividades que más me ayudan a relajarme y desconectarme del estrés.</p>
+        </div>
+      </div>
+
+      <!-- molecule: carousel-slide #5 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">05</div>
+          <img src="/assets/img/TiempoLibre.jpg" alt="Tiempo libre">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">05 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">🍿 Tiempo de calidad en casa</h3>
+          <p class="sc-desc">Disfruto ver series y películas, en especial cuando puedo compartir ese tiempo con mi familia o relajarme en casa con mi gatita.</p>
+        </div>
+      </div>
+
+      <!-- molecule: carousel-slide #6 -->
+      <div class="stack-card">
+        <div class="sc-visual">
+          <div class="sc-num">06</div>
+          <img src="/assets/img/Tejer.jpg" alt="Tejer">
+        </div>
+        <div class="sc-content">
+          <span class="sc-idx">06 / 06 — Pasatiempo</span>
+          <h3 class="sc-title">🧶 Tejer y pintar</h3>
+          <p class="sc-desc">Me ayuda a liberar energía y puedo mantener un equilibrio entre mis responsabilidades y mi vida personal.</p>
+        </div>
+      </div>
+
+    </div><!-- /stack-carousel -->
+
+    <!-- Controles del carrusel -->
+    <div class="stack-controls">
+      <button class="stack-btn" onclick="stackMove(-1)" aria-label="Anterior">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <button class="stack-btn" onclick="stackMove(1)" aria-label="Siguiente">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+      <div class="stack-dots" id="stackDots"></div>
+      <span class="stack-counter" id="stackCounter">1 / 6</span>
+    </div>
+
+  </div>
+</section>

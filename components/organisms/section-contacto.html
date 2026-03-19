@@ -1,0 +1,127 @@
+<!-- ORGANISM: section-contacto.html
+     Sección de contacto: info lateral + formulario + mensajes guardados.
+     Contiene: atom/section-heading, molecule/contact-info-card,
+               molecule/contact-form, molecule/saved-messages
+-->
+<section id="contacto">
+  <div class="container fade-up">
+
+    <!-- atom: section-heading -->
+    <p class="sec-label mb-1">✦ Hablemos</p>
+    <h2 class="sec-title">Ponte en <em>Contacto</em></h2>
+    <div class="divider"></div>
+
+    <!-- Bootstrap grid: 4+8 en desktop, 1 col en móvil -->
+    <div class="row g-5">
+
+      <!-- Info lateral -->
+      <div class="col-lg-4">
+        <p class="mb-4" style="font-size:.93rem;color:var(--text-mid);line-height:1.85">
+          ¿Tienes un proyecto en mente, quieres colaborar o simplemente deseas conocerme mejor? 
+          Completa el formulario y te responderé lo antes posible.
+        </p>
+
+        <!-- molecule: contact-info-card x3 -->
+        <div class="cinfo-card">
+          <div class="cinfo-icon">📧</div>
+          <div>
+            <div class="cinfo-lbl">Correo</div>
+            <div class="cinfo-val">tucorreo@email.com</div>
+          </div>
+        </div>
+        <div class="cinfo-card">
+          <div class="cinfo-icon">📞</div>
+          <div>
+            <div class="cinfo-lbl">Teléfono</div>
+            <div class="cinfo-val">+57 300 000 0000</div>
+          </div>
+        </div>
+        <div class="cinfo-card">
+          <div class="cinfo-icon">📍</div>
+          <div>
+            <div class="cinfo-lbl">Ubicación</div>
+            <div class="cinfo-val">Popayán, Colombia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario + mensajes guardados -->
+      <div class="col-lg-8">
+        <div class="form-card">
+
+          <!-- molecule: contact-form -->
+          <form id="contactForm" novalidate onsubmit="sendForm(event)">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="flabel" for="fName">Nombre completo *</label>
+                <input type="text" id="fName" class="finput" placeholder="Tu nombre completo">
+                <div class="ferr" id="eN">⚠️ Nombre obligatorio (mín. 2 caracteres)</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="flabel" for="fEmail">Correo electrónico *</label>
+                <input type="email" id="fEmail" class="finput" placeholder="tu@correo.com">
+                <div class="ferr" id="eE">⚠️ Ingresa un correo válido</div>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="flabel" for="fPhone">Teléfono</label>
+                <input type="tel" id="fPhone" class="finput" placeholder="+57 300 000 0000">
+                <div class="ferr" id="eP">⚠️ Formato inválido</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="flabel" for="fMot">Motivo de contacto *</label>
+                <select id="fMot" class="finput">
+                  <option value="">Selecciona un motivo...</option>
+                  <option>Propuesta laboral</option>
+                  <option>Colaboración en proyecto</option>
+                  <option>Consulta técnica</option>
+                  <option>Otro</option>
+                </select>
+                <div class="ferr" id="eM">⚠️ Selecciona un motivo</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="flabel" for="fMsg">Mensaje *</label>
+              <textarea id="fMsg" class="finput" placeholder="Cuéntame en qué puedo ayudarte..."></textarea>
+              <div class="ferr" id="eMg">⚠️ El mensaje debe tener al menos 10 caracteres</div>
+            </div>
+            <div class="mb-3">
+              <label class="flabel">Preferencia de respuesta</label>
+              <div class="d-flex gap-2">
+                <label class="pref-opt"><input type="radio" name="pref" value="correo" checked> 📧 Correo</label>
+                <label class="pref-opt"><input type="radio" name="pref" value="telefono"> 📞 Teléfono</label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="terms-row">
+                <input type="checkbox" id="fTerms">
+                <span>Acepto que mis datos sean usados únicamente para responder este mensaje.</span>
+              </label>
+              <div class="ferr" id="eT">⚠️ Debes aceptar los términos para continuar</div>
+            </div>
+            <button type="submit" class="btn-send">
+              <i class="bi bi-send me-2"></i> Enviar mensaje
+            </button>
+          </form>
+
+          <!-- molecule: saved-messages -->
+          <div class="saved-section">
+            <div class="saved-header">
+              <span class="saved-title"><i class="bi bi-inbox me-1"></i>Mensajes recibidos</span>
+              <span class="saved-count" id="savedCount">0</span>
+            </div>
+            <div class="saved-box" id="savedBox">
+              <div class="saved-empty" id="savedEmpty">
+                <i class="bi bi-chat-dots" style="font-size:1.5rem;display:block;margin-bottom:.4rem;color:var(--rose-200)"></i>
+                Aún no hay mensajes guardados
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

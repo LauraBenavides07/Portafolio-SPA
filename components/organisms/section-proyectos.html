@@ -1,0 +1,68 @@
+<!-- ORGANISM: section-proyectos.html
+     Grid de tarjetas de proyectos.
+     Contiene: atom/section-heading, molecule/project-card (x3)
+-->
+<section id="proyectos">
+  <div class="container fade-up">
+
+    <!-- atom: section-heading -->
+    <p class="sec-label mb-1">✦ Lo que he desarrollado</p>
+    <h2 class="sec-title">Mis <em>Proyectos</em></h2>
+    <div class="divider"></div>
+
+    <!-- Bootstrap grid: 1 col móvil / 2 tablet / 3 desktop -->
+    <div class="row g-4">
+
+      <!-- molecule: project-card #1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proj-card">
+          <div class="proj-icon">🌐</div>
+          <h5>Sitio Web Personal</h5>
+          <p class="mb-3">Portafolio personal desarrollado desde cero con diseño responsivo e interactivo.</p>
+          <div class="mb-3">
+            <span class="lang-pill">HTML</span>
+            <span class="lang-pill">CSS</span>
+            <span class="lang-pill">JavaScript</span>
+          </div>
+          <a href="https://github.com/LauraBenavides07/Pagina-Personal" class="proj-link">
+            <i class="bi bi-github me-1"></i>Ver GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- molecule: project-card #2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proj-card">
+          <div class="proj-icon">🎓</div>
+          <h5>Gestión trabajos de grado</h5>
+          <p class="mb-3">Sistema para la administración y seguimiento de trabajos de grado de la Facultad de Ingeniería Electrónica y Telecomunicaciones.</p>
+          <div class="mb-3">
+            <span class="lang-pill">Java</span>
+            <span class="lang-pill">PostgreSQL</span>
+            <span class="lang-pill">Docker</span>
+          </div>
+          <a href="https://github.com/derlygomezvl/SOFWARE2-SEGUNDA-ENTREGA" class="proj-link">
+            <i class="bi bi-github me-1"></i>Ver GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- molecule: project-card #3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proj-card">
+          <div class="proj-icon">💰</div>
+          <h5>Gestión casa de empeño</h5>
+          <p class="mb-3">Sistema para la gestión de préstamos, clientes e inventario de una casa de empeño con reportes y control de transacciones.</p>
+          <div class="mb-3">
+            <span class="lang-pill">C#</span>
+            <span class="lang-pill">ASP.NET</span>
+          </div>
+          <a href="https://github.com/FaberGG/SisGestorEmpenio" class="proj-link">
+            <i class="bi bi-github me-1"></i>Ver GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<!-- ORGANISM: section-inicio.html
+     Sección hero completa: texto + foto circular.
+     Contiene: atoms/btn-rose, atoms/btn-outline, molecules/hero-photo
+-->
+<section id="inicio">
+  <div class="container py-4" style="position:relative;z-index:1">
+    <div class="row align-items-center g-5">
+
+      <!-- Texto hero -->
+      <div class="col-lg-6 fade-up">
+        <p class="hero-tag mb-3">&#10022; Portafolio profesional</p>
+        <h1 class="hero-name mb-2">Laura Isabel<br><em>Benavides Pito</em></h1>
+        <p class="hero-birth mb-4">
+          🎂 DD / MM / AAAA · 📍 Popayán, Colombia
+        </p>
+        <p class="hero-bio mb-5" style="max-width:490px">
+          Soy estudiante de séptimo semestre de Ingeniería de sistemas, con intereses en el desarrollo de software,
+          especialmente en el área de frontend, así como en la inteligencia artificial y la ciberseguridad. 
+          Desarrollo soluciones funcionales mientras continúo fortaleciendo de manera constante mis habilidades técnicas.
+          Me motiva el aprendizaje continuo y la exploración de nuevas tecnologías como parte de mi crecimiento profesional y personal,
+          con el objetivo de participar en poryectos innovadores y proyectarme hacia el liderazgo en iniciativas tecnológicas que generen impacto.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <!-- atom: btn-rose -->
+          <a href="https://github.com/LauraBenavides07" target="_blank" class="btn-rose">
+            <i class="bi bi-github"></i> Ver GitHub
+          </a>
+          <!-- atom: btn-outline -->
+          <a href="#contacto" class="btn-outline-rose">
+            <i class="bi bi-envelope"></i> Contactar
+          </a>
+        </div>
+      </div>
+
+      <!-- MOLECULE: hero-photo.html
+     Foto circular fija con aro animado, badge y pill. -->
+      <div class="photo-wrap">
+        <div class="photo-ring">
+          <img src="/assets/img/FotoLau.jpg" alt="Laura Benavides">
+        </div>
+        <div class="badge-avail">🌸 Disponible 2026</div>
+        <div class="pill-deg"><div class="dot-green"></div>Ing. Sistemas</div>
+      </div>
+
+    </div>
+  </div>
+</section>

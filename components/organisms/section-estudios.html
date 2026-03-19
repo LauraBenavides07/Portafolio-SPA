@@ -1,0 +1,55 @@
+<!-- ORGANISM: section-estudios.html
+     Sección de formación académica.
+     Contiene: atom/section-heading, molecule/study-table
+-->
+<section id="estudios">
+  <div class="container fade-up">
+
+    <!-- atom: section-heading -->
+    <p class="sec-label mb-1">✦ Formación académica</p>
+    <h2 class="sec-title">Mis <em>Estudios</em></h2>
+    <div class="divider"></div>
+
+    <!-- molecule: study-table (tabla desktop + tarjetas móvil) -->
+    <div class="study-table-wrap">
+      <table class="study-table">
+        <thead>
+          <tr>
+            <th>Nivel</th>
+            <th>Institución</th>
+            <th>Carrera / Curso</th>
+            <th>Años</th>
+            <th>Ubicación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="lvl-badge lvl-tec">Técnico</span></td>
+            <td>SENA</td>
+            <td>Técnico en Sistemas</td>
+            <td>2021 - 2022</td>
+            <td>Colombia</td>
+          </tr>
+          <tr>
+            <td><span class="lvl-badge lvl-car">Carrera</span></td>
+            <td>Universidad del Cauca</td>
+            <td>Ingeniería en Sistemas</td>
+            <td>2022 - Presente</td>
+            <td>Popayán, CO</td>
+          </tr>
+          <tr>
+            <td><span class="lvl-badge lvl-cur">Curso</span></td>
+            <td>Udemy</td>
+            <td>Diseño Web Completo</td>
+            <td>2023</td>
+            <td>En línea</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tarjetas generadas por JS para móvil -->
+    <div class="study-cards" id="studyCards"></div>
+
+  </div>
+</section>

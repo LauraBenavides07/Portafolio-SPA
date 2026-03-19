@@ -1,0 +1,46 @@
+<!-- MOLECULE: study-table.html
+     Tabla académica (desktop/tablet) + tarjetas (móvil).
+     La tabla es fija (sin botón agregar ni X eliminar).
+     Las tarjetas se renderizan automáticamente por JS renderStudyCards().
+-->
+
+<!-- Tabla — visible en desktop >= md -->
+<div class="study-table-wrap">
+  <table class="study-table">
+    <thead>
+      <tr>
+        <th>Nivel</th>
+        <th>Institución</th>
+        <th>Carrera / Curso</th>
+        <th>Años</th>
+        <th>Ubicación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="lvl-badge lvl-tec">Técnico</span></td>
+        <td>SENA</td>
+        <td>Técnico en Sistemas</td>
+        <td>2021 - 2022</td>
+        <td>Colombia</td>
+      </tr>
+      <tr>
+        <td><span class="lvl-badge lvl-car">Carrera</span></td>
+        <td>Universidad del Cauca</td>
+        <td>Ingeniería en Sistemas</td>
+        <td>2022 - Presente</td>
+        <td>Popayán, CO</td>
+      </tr>
+      <tr>
+        <td><span class="lvl-badge lvl-cur">Curso</span></td>
+        <td>Udemy</td>
+        <td>Diseño Web Completo</td>
+        <td>2023</td>
+        <td>En línea</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Tarjetas — visibles solo en móvil < md, generadas por JS -->
+<div class="study-cards" id="studyCards"></div>
