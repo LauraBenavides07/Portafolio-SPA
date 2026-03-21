@@ -19,17 +19,16 @@
 - ✅ Navbar colapsable en móvil
 
 ## 📁 Estructura
-
 Con-Framework/
-├── assets/img
+├── assets/img/
 ├── components/
-|   ├──atoms/
-|   ├──molecules/
-|   ├──organisms/
-|   ├──pages/index.html
-|   └──templates/base.html
-├──css/main.css
-└──js/main.js
+│ ├── atoms/
+│ ├── molecules/
+│ ├── organisms/
+│ ├── pages/index.html
+│ └── templates/base.html
+├── css/main.css
+└── js/main.js
 
 
 ## 🚀 Cómo Ejecutar
